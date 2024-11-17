@@ -1,5 +1,19 @@
-// import a css file containig article styles
+// Importuje CSS soubor obsahující styly pro článek
+import './Article.css';
 
-// Create an Article function returning the HTML of article block
+// Vytvoří funkci Article vracející HTML bloku článku
+function Article() {
+  return (
+    <div className="article">
+      <h1 className="article__text">Headline</h1>
+      <p className="article__paragraph">Some text</p>
+      <p className="article__paragraph">Some text</p>
+      <p className="article__paragraph">Some text</p>
+      <p className="article__paragraph">Some text</p>
+      <p className="article__paragraph">Some text</p>
+    </div>
+  );
+}
 
-// Add a default export statement for Article component to use it in the other files
+// Přidává defaultní export komponenty Article pro použití v dalších souborech
+export default Article;
